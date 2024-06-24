@@ -18,6 +18,14 @@ export default defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: "subtitle",
+      description: "This field is the subtitle of your blog.",
+      title: "Subtitle",
+      type: "string",
+      initialValue: "subititle",
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: "description",
       description:
         "Used both for the <meta> description tag for SEO, and the blog subheader.",
